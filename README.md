@@ -1,17 +1,17 @@
-# Proyecto XYZ
+# Mi Portafolio Personal con Next.js
 
-Este repositorio contiene el código fuente del proyecto XYZ. [Breve descripción del propósito y objetivo del proyecto]. Fue desarrollado por [Tu Nombre] utilizando [tecnologías específicas].
+Este repositorio contiene el código fuente de mi portafolio personal, construido utilizando Next.js. El portafolio presenta una muestra de mi trabajo, proyectos destacados y detalles sobre mis habilidades y experiencia en desarrollo de software.
 
 ## Instalación
 
-Asegúrate de tener [requisitos previos] instalados. Luego, sigue estos pasos:
+Asegúrate de tener Node.js y npm instalados. Luego, sigue estos pasos:
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/tuusuario/proyecto-xyz.git
+git clone https://github.com/tuusuario/mi-portafolio.git
 
 # Ingresa al directorio del proyecto
-cd proyecto-xyz
+cd mi-portafolio
 
 # Instala las dependencias
 npm install
