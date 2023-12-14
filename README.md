@@ -1,4 +1,4 @@
-# Mi Portafolio Personal con Next.js
+# Mi Portafolio Personal
 
 Este repositorio contiene el código fuente de mi portafolio personal, construido utilizando Next.js. El portafolio presenta una muestra de mi trabajo, proyectos destacados y detalles sobre mis habilidades y experiencia en desarrollo de software.
 
