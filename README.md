@@ -8,7 +8,7 @@ Asegúrate de tener Node.js y npm instalados. Luego, sigue estos pasos:
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/tuusuario/mi-portafolio.git
+git clone https://github.com/Perez18/mi-portafolio.git
 
 # Ingresa al directorio del proyecto
 cd mi-portafolio
