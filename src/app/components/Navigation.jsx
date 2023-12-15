@@ -11,7 +11,7 @@ export const Navigation = () => {
       </NavbarBrand>
       <NavbarContent className='hidden sm:flex gap-4' justify='center'>
         <NavbarItem>
-          <Link color='foreground' key='proyectos' href='/proyectos' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
+          <Link color='foreground' key='proyectos' href='#proyectos' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
             Proyectos
           </Link>
         </NavbarItem>
