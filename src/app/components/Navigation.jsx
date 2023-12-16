@@ -1,21 +1,40 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from '@nextui-org/react'
+'use client'
+import React from 'react'
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, useDisclosure } from '@nextui-org/react'
+import { ThemeSwitcher } from './ThemeSwitcher'
+import ModalEnviarMsg from './ModalEnviarMsg'
 
 export const Navigation = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [backdrop, setBackdrop] = React.useState('opaque')
+
+  const handleOpen = () => {
+    setBackdrop('blur')
+    onOpen()
+  }
+
   return (
-    <Navbar>
-      <NavbarBrand className='text-black'>
-        {/* <AcmeLogo /> */}
-        <Link href='/' className='text-black'>
-          <h5 className='font-bold'>Icono</h5>
-        </Link>
-      </NavbarBrand>
-      <NavbarContent className='hidden sm:flex gap-4' justify='center'>
-        <NavbarItem>
-          <Link color='foreground' key='proyectos' href='#proyectos' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
-            Proyectos
+    <>
+      <Navbar>
+        <NavbarBrand className='text-black'>
+          <Link href='/' className='text-black'>
+            <ThemeSwitcher />
           </Link>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+        </NavbarBrand>
+        <NavbarContent as='div' justify='end'>
+          <NavbarItem>
+            <Link color='foreground' key='proyectos' href='#proyectos' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
+              Proyectos
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Button as={Link} color='success' href='#' variant='flat' onPress={handleOpen}>
+              Enviar Mensaje
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
+      </Navbar>
+      <ModalEnviarMsg backdrop={backdrop} isOpen={isOpen} onClose={onClose} />
+    </>
   )
 }

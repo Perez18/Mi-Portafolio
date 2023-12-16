@@ -7,19 +7,14 @@ export const Presentacion = () => {
         <h1 className='text-4xl font-bold'>Hola, Mi Nombres es
           <span className='bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> Anthony</span> 👋
         </h1>
-        <p className='mt-6 text-xl leading-9'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'>malesuada</a> nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,
-          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'>consectetur</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        <p className='mt-6 text-xl leading-9'>Desarrollador web entusiasta
+          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'>   con habilidades en todas las áreas. </a>
+          tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo
+          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> funcione sin problemas.</a>
         </p>
-        <div className='mt-3 flex gap-1'><a href='/demo/astro-boilerplate'><img class='h-12 w-12 hover:translate-y-1' src='assets/images/twitter-icon.png' alt='Twitter icon' loading='lazy' /></a>
-          <a href='/demo/astro-boilerplate'>
-            <img class='h-12 w-12 hover:translate-y-1' src='assets/images/facebook-icon.png' alt='Facebook icon' loading='lazy' />
-          </a>
-          <a href='/demo/astro-boilerplate'>
-            <img className='h-12 w-12 hover:translate-y-1' src='assets/images/linkedin-icon.png' alt='Linkedin icon' loading='lazy' />
-          </a>
-          <a href='/demo/astro-boilerplate'>
-            <img className='h-12 w-12 hover:translate-y-1' src='assets/images/youtube-icon.png' alt='Youtube icon' loading='lazy' />
+        <div className='mt-3 flex gap-1'>
+          <a href='https://github.com/Perez18' target='_blank' rel='noreferrer'>
+            <Image className='hover:translate-y-1' src='/assets/github.svg' alt='Github' width='50' height='50' loading='lazy' />
           </a>
         </div>
       </div>
