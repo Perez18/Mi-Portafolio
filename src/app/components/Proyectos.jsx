@@ -37,7 +37,7 @@ export const Proyectos = () => {
           </CardHeader>
           <Image
             removeWrapper
-            // isZoomed
+            isZoomed
             isBlurred
             alt='Card background'
             className='z-0 w-full h-64 object-cover'

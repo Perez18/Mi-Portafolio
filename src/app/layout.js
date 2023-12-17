@@ -15,7 +15,7 @@ export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
       <Head>
-        <link rel='shortcut icon' href='assets/luna.ico' />
+        <link rel='shortcut icon' href='/assets/luna.ico' />
       </Head>
       <body className={inter.className}>
         <Providers>
