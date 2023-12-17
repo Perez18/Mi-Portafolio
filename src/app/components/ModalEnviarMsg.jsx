@@ -33,7 +33,7 @@ const ModalEnviarMsg = (
                   Close
                 </Button>
                 <Button color='primary' onPress={onClose}>
-                  Enviar mensaje
+                  Enviar
                 </Button>
               </ModalFooter>
             </>

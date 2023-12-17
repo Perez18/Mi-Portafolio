@@ -14,7 +14,7 @@ export const Presentacion = () => {
         </p>
         <div className='mt-3 flex gap-1'>
           <a href='https://github.com/Perez18' target='_blank' rel='noreferrer'>
-            <Image className='hover:translate-y-1' src='/assets/github.svg' alt='Github' width='50' height='50' loading='lazy' />
+            <Image className='hover:translate-y-1' src='/assets/github.svg' alt='Github' width='40' height='40' loading='lazy' />
           </a>
         </div>
       </div>
