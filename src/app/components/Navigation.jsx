@@ -3,13 +3,18 @@ import React from 'react'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, useDisclosure } from '@nextui-org/react'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import ModalEnviarMsg from './ModalEnviarMsg'
+import { isMobile } from 'react-device-detect'
 
 export const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [backdrop, setBackdrop] = React.useState('opaque')
+  const [backdrop, setBackdrop] = React.useState('')
 
   const handleOpen = () => {
-    setBackdrop('blur')
+    if (isMobile) {
+      setBackdrop('')
+    } else {
+      setBackdrop('blur')
+    }
     onOpen()
   }
 

@@ -3,12 +3,13 @@ import { Card, CardHeader, CardFooter, Button, Image } from '@nextui-org/react'
 export const Proyectos = () => {
   return (
     <div>
-      <h2 className='text-4xl font-bold pb-10'>Proyectos</h2>
+      <h2 className='text-4xl font-bold'>Proyectos</h2>
+      <p className='pb-9 pt-2'>El mejor modo de predecir
+        <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> el futuro  es creándolo</a>
+      </p>
       <div className='max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8'>
         <Card className='col-span-12 sm:col-span-4 h-[300px]'>
-          <CardHeader className='absolute z-10 top-1 flex-col !items-start'>
-            {/* <h4 className='text-black font-medium text-large'>Stream the Acme event</h4> */}
-          </CardHeader>
+          <CardHeader className='absolute z-10 top-1 flex-col !items-start' />
           <Image
             removeWrapper
             isZoomed
@@ -120,12 +121,6 @@ export const Proyectos = () => {
           />
           <CardFooter className='absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100'>
             <div className='flex flex-grow gap-2 items-center'>
-              <Image
-                removeWrapper
-                alt='Breathing app icon'
-                className='rounded-full w-10 h-11 bg-black'
-                src='https://nextui.org/images/breathing-app-icon.jpeg'
-              />
               <div className='flex flex-col'>
                 <p className='text-sm text-white/60'>Administrador de prestamo</p>
                 {/* <p className='text-tiny text-white/60'>Get a good night's sleep.</p> */}
