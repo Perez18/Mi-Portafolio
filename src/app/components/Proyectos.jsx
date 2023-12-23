@@ -16,10 +16,12 @@ export const Proyectos = () => {
             alt='Card background'
             className='z-0 w-full h-50 object-cover'
             src='https://psicologiacr.com/wp-content/uploads/2017/12/Factura-obligatoria-1.jpg'
+            width={20}
+            height={20}
           />
           <CardFooter className='absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between'>
             <div>
-              <p className='text-white/70 text-sm'>Integracion de facturacion Electronica</p>
+              <p className='text-white/90 text-sm'>Integracion de facturacion Electronica</p>
               {/* <p className='text-black text-tiny'>Get notified.</p> */}
             </div>
             <Button className='text-tiny bg-white' radius='full' size='sm'>
@@ -48,7 +50,7 @@ export const Proyectos = () => {
           />
           <CardFooter className='absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between'>
             <div>
-              <p className='text-white/70 text-sm'>Integracion de boton de yappy</p>
+              <p className='text-white/90 text-sm'>Integracion de boton de yappy</p>
               {/* <p className='text-black text-tiny'>Get notified.</p> */}
             </div>
             <Button className='text-tiny bg-white' radius='full' size='sm'>
@@ -75,7 +77,7 @@ export const Proyectos = () => {
           />
           <CardFooter className='absolute bg-black/40 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between'>
             <div>
-              <p className='text-white/70 text-sm'>Portal de pago</p>
+              <p className='text-white/90 text-sm'>Portal de pago</p>
               {/* <p className='text-black text-tiny'>Get notified.</p> */}
             </div>
             <Button className='text-tiny' radius='full' size='sm'>
@@ -99,7 +101,7 @@ export const Proyectos = () => {
           />
           <CardFooter className='absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between'>
             <div>
-              <p className='text-white text-sm'>Portal de cliente</p>
+              <p className='text-white/90 text-sm'>Portal de cliente</p>
               {/* <p className='text-black text-tiny'>Get notified.</p> */}
             </div>
             {/* <Button className='text-tiny' color='primary' radius='full' size='sm'>
@@ -122,7 +124,7 @@ export const Proyectos = () => {
           <CardFooter className='absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100'>
             <div className='flex flex-grow gap-2 items-center'>
               <div className='flex flex-col'>
-                <p className='text-sm text-white/60'>Administrador de prestamo</p>
+                <p className='text-sm text-white/90'>Administrador de prestamo</p>
                 {/* <p className='text-tiny text-white/60'>Get a good night's sleep.</p> */}
               </div>
             </div>

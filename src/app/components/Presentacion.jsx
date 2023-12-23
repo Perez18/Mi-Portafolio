@@ -10,7 +10,7 @@ export const Presentacion = () => {
         <p className='mt-6 text-xl leading-9'>Desarrollador entusiasta
           <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'>   con habilidades en todas las áreas </a>
           tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo
-          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> funcione sin problemas.</a>
+          <span className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> funcione sin problemas.</span>
         </p>
         <div className='mt-3 flex gap-1'>
           <a href='https://github.com/Perez18' target='_blank' rel='noreferrer'>
