@@ -8,9 +8,9 @@ export const Presentacion = () => {
           <span className='bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> Anthony</span> 👋
         </h1>
         <p className='mt-6 text-xl leading-9'>Desarrollador entusiasta
-          <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'>   con habilidades en todas las áreas </a>
+          <span className='text-cyan-400'>   con habilidades en todas las áreas </span>
           tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo
-          <span className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> funcione sin problemas.</span>
+          <span className='text-cyan-400'> funcione sin problemas.</span>
         </p>
         <div className='mt-3 flex gap-1'>
           <a href='https://github.com/Perez18' target='_blank' rel='noreferrer'>
@@ -19,7 +19,7 @@ export const Presentacion = () => {
         </div>
       </div>
       <div className='shrink-0'>
-        <Image src='/astronauta.png' alt='me' width='300' height='300' loading='lazy' />
+        <Image src='/astronauta.png' alt='me' width='300' height='300' />
       </div>
     </section>
   )

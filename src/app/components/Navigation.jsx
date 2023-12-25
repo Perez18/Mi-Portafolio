@@ -26,7 +26,7 @@ export const Navigation = () => {
             <ThemeSwitcher />
           </Link>
         </NavbarBrand>
-        <NavbarContent as='div' justify='end'>
+        <NavbarContent as='ul' justify='end'>
           <NavbarItem>
             <Link color='foreground' key='proyectos' href='#proyectos' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
               Proyectos

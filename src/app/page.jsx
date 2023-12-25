@@ -1,4 +1,3 @@
-import Footer from './components/Footer'
 import { Presentacion } from './components/Presentacion'
 import { Proyectos } from './components/Proyectos'
 import { Skills } from './components/Skills'
@@ -9,7 +8,6 @@ const page = () => {
       <Presentacion />
       <Proyectos />
       <Skills />
-      <Footer />
     </div>
   )
 }

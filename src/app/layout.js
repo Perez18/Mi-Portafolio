@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Providers } from './providers'
 import './globals.css'
 import 'react-toastify/dist/ReactToastify.css'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,9 @@ export default function RootLayout ({ children }) {
             <Navigation />
             {children}
           </main>
+          <footer>
+            <Footer />
+          </footer>
         </Providers>
       </body>
     </html>

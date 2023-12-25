@@ -2,7 +2,7 @@ import { Card, CardHeader, CardFooter, Button, Image } from '@nextui-org/react'
 
 export const Proyectos = () => {
   return (
-    <div>
+    <section>
       <h2 className='text-4xl font-bold'>Proyectos</h2>
       <p className='pb-9 pt-2'>El mejor modo de predecir
         <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> el futuro  es creándolo</a>
@@ -14,8 +14,8 @@ export const Proyectos = () => {
             removeWrapper
             isZoomed
             alt='Card background'
-            className='z-0 w-full h-50 object-cover'
-            src='https://psicologiacr.com/wp-content/uploads/2017/12/Factura-obligatoria-1.jpg'
+            className='z-0 w-full h-60 object-cover'
+            src='/proyectos/factelect.webp'
             width={20}
             height={20}
           />
@@ -97,7 +97,7 @@ export const Proyectos = () => {
             isZoomed
             alt='Card example background'
             className='z-0 w-full h-full object-cover'
-            src='/proyectos/portalcliente.png'
+            src='/proyectos/portalcliente.webp'
           />
           <CardFooter className='absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between'>
             <div>
@@ -136,6 +136,6 @@ export const Proyectos = () => {
           </CardFooter>
         </Card>
       </div>
-    </div>
+    </section>
   )
 }

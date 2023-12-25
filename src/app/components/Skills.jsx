@@ -5,7 +5,7 @@ import { Card, CardBody, Image } from '@nextui-org/react'
 
 export const Skills = () => {
   return (
-    <div className='pt-24'>
+    <section className='pt-24'>
       <h2 className='text-4xl font-bold pb-10'>Habilidades</h2>
       {/* Lenguaje de programacion */}
       <section className='flex flex-wrap gap-5'>
@@ -83,6 +83,6 @@ export const Skills = () => {
           </div>
         </Card>
       </section>
-    </div>
+    </section>
   )
 }

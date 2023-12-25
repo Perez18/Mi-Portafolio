@@ -2,11 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='pt-40'>
-
+    <section className='footer py-10'>
       <p className='text-center'>Copyright ©2023. All rights reserved.</p>
-
-    </div>
+    </section>
   )
 }
 
