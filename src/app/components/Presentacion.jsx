@@ -7,7 +7,7 @@ export const Presentacion = () => {
         <h1 className='text-4xl font-bold'>Hola, Mi Nombres es
           <span className='bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> Anthony</span> 👋
         </h1>
-        <p className='mt-6 text-xl leading-9'>Desarrollador entusiasta
+        <p className='mt-6 text-xl leading-9'>Desarrollador web entusiasta
           <span className='text-cyan-400'>   con habilidades en todas las áreas </span>
           tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo
           <span className='text-cyan-400'> funcione sin problemas.</span>
