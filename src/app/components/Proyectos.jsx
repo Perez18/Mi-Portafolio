@@ -2,10 +2,10 @@ import { Card, CardHeader, CardFooter, Button, Image } from '@nextui-org/react'
 
 export const Proyectos = () => {
   return (
-    <section>
+    <section id='proyectos'>
       <h2 className='text-4xl font-bold'>Proyectos</h2>
       <p className='pb-9 pt-2'>El mejor modo de predecir
-        <a className='text-cyan-400 hover:underline' href='/demo/astro-boilerplate'> el futuro  es creándolo</a>
+        <span className='text-cyan-400'> el futuro  es creándolo</span>
       </p>
       <div className='max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8'>
         <Card className='col-span-12 sm:col-span-4 h-[300px]'>

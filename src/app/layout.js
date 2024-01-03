@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout ({ children }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <Head>
         <meta name='author' content='Anthony Perez' />
         <link rel='shortcut icon' href='/assets/luna.ico' />
