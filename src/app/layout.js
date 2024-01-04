@@ -15,7 +15,7 @@ export const metadata = {
   description: 'Anthony Perez - Desarrollador web'
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout ({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <Head>
