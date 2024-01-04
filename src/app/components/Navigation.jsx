@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, useDisclosure } from '@nextui-org/react'
 import { isMobile } from 'react-device-detect'
+import MapPinIcon from '../icons/MapPin'
 
 export const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -22,8 +23,12 @@ export const Navigation = () => {
   return (
     <>
       <Navbar>
-        <NavbarBrand className='text-black'>
+        <NavbarBrand>
           <ThemeSwitcher />
+          <p className='text-small lg:ml-3'>
+            <MapPinIcon />
+            Panama
+          </p>
         </NavbarBrand>
         <NavbarContent as='ul' justify='end'>
           <NavbarItem>

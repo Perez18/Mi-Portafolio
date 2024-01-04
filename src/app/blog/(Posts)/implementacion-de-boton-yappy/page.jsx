@@ -20,7 +20,7 @@ const page = () => {
           </code>
         </pre>
         <p>o</p>
-        <pre className='bg-slate-400/10 py-6 break-all'>
+        <pre className='bg-slate-400/10 py-6 truncate'>
           <code>
             npm install https://github.com/BancoGeneral/Boton-de-Pago-Yappy_Node.js/releases/download/X.X.X/yappy-node-back-sdk-X.X.X.tar
           </code>
