@@ -20,7 +20,7 @@ export default function RootLayout ({ children }) {
     <html lang='en' className='scroll-smooth'>
       <Head>
         <meta name='author' content='Anthony Perez' />
-        <link rel='shortcut icon' href='/assets/luna.ico' />
+        <link rel='shortcut icon' href='/favicon.ico' />
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap' rel='stylesheet' />
         <link rel='canonical' href='https://www.anthonyperez.xyz/' />
         <meta name='viewport' content='initial-scale=1.0; maximum-scale=1.0; user-scalable=yes;' />

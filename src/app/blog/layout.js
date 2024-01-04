@@ -22,7 +22,7 @@ export default function RootLayout ({ children }) {
           key='canonical'
         />
       </Head>
-      <div className='mx-auto max-w-screen-lg px-3'>
+      <div className='mx-auto max-w-screen-lg px-5'>
         <BreadcrumbMain />
         {children}
       </div>
