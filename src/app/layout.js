@@ -17,16 +17,6 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <script async src='https://www.googletagmanager.com/gtag/js?id=G-CWF0FSM2XC' />
-      <script>
-        {`
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-         
-           gtag('config', 'G-CWF0FSM2XC');
-         `}
-      </script>
       <Head>
         <meta name='author' content='Anthony Perez' />
         <link rel='shortcut icon' href='/assets/luna.ico' />
@@ -37,6 +27,16 @@ export default function RootLayout ({ children }) {
           name='keyword'
           content='Portafolio web, Desarrollador web, fullstack,Desarrollo en Panama'
         />
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-CWF0FSM2XC' />
+        <script>
+          {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'G-CWF0FSM2XC');
+         `}
+        </script>
       </Head>
       <body className={inter.className}>
         <Providers>
