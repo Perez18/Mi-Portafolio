@@ -15,7 +15,7 @@ export const metadata = {
   description: 'Anthony Perez - Desarrollador web'
 }
 
-export default function RootLayout ({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <Head>
@@ -30,7 +30,8 @@ export default function RootLayout ({ children }) {
         />
       </Head>
       <body className={inter.className}>
-        <GoogleAnalytics />
+        {process.env.NODE_ENV}
+        {/* <GoogleAnalytics /> */}
         <Providers>
           <main>
             <Navigation />

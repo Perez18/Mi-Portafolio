@@ -31,11 +31,11 @@ export const Navigation = () => {
               Proyectos
             </Link>
           </NavbarItem>
-          {/* <NavbarItem>
+          <NavbarItem>
             <Link color='foreground' key='proyectos' href='/blog' className='gap-8 space-y-6 tracking-wide lg:flex lg:space-y-0 lg:text-sm lg:items-center'>
               Blog
             </Link>
-          </NavbarItem> */}
+          </NavbarItem>
           <NavbarItem>
             <Button as={Link} color='success' href='#' variant='flat' onPress={handleOpen}>
               Enviar Mensaje
