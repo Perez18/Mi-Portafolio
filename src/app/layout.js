@@ -6,6 +6,7 @@ import { Providers } from './providers'
 import './globals.css'
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from './components/Footer'
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,18 +28,9 @@ export default function RootLayout ({ children }) {
           name='keyword'
           content='Portafolio web, Desarrollador web, fullstack,Desarrollo en Panama'
         />
-        <script async src='https://www.googletagmanager.com/gtag/js?id=G-CWF0FSM2XC' />
-        <script>
-          {`
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-         
-           gtag('config', 'G-CWF0FSM2XC');
-         `}
-        </script>
       </Head>
       <body className={inter.className}>
+        <GoogleAnalytics />
         <Providers>
           <main>
             <Navigation />
