@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Portafolio - Anthony Perez',
-  description: 'Anthony Perez - Desarrollador web'
+  description: 'Desarrollador web entusiasta con habilidades en todas las áreas tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo funcione sin problemas.'
 }
 
 export default function RootLayout ({ children }) {

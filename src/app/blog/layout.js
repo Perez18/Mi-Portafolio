@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export const metadata = {
   title: 'Blog - Anthony Perez',
-  description: 'Blog'
+  description: 'Explora el desarrollo web en mi blog. Tutoriales, integraciones y consejos.'
 }
 
 export default function RootLayout ({ children }) {
