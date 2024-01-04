@@ -6,7 +6,7 @@ import { Providers } from './providers'
 import './globals.css'
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from './components/Footer'
-import GoogleAnalytics from './components/GoogleAnalytics'
+// import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
