@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Head from 'next/head'
 import { Navigation } from './components/Navigation'
 import { Inter } from 'next/font/google'
@@ -16,10 +17,21 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
+      <script async src='https://www.googletagmanager.com/gtag/js?id=G-CWF0FSM2XC' />
+      <script>
+        {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'G-CWF0FSM2XC');
+         `}
+      </script>
       <Head>
         <meta name='author' content='Anthony Perez' />
         <link rel='shortcut icon' href='/assets/luna.ico' />
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap' rel='stylesheet' />
+        <link rel='canonical' href='https://www.anthonyperez.xyz/' />
         <meta name='viewport' content='initial-scale=1.0; maximum-scale=1.0; user-scalable=yes;' />
         <meta
           name='keyword'

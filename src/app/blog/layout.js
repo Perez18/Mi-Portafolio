@@ -2,20 +2,30 @@
 // import { Inter } from 'next/font/google'
 // import { Providers } from './providers'
 // import './globals.css'
+import Head from 'next/head'
 import { BreadcrumbMain } from './components/BreadcrumbMain'
 import 'react-toastify/dist/ReactToastify.css'
 // import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Portafolio - Blog',
+  title: 'Blog - Anthony Perez',
   description: 'Blog'
 }
 
 export default function RootLayout ({ children }) {
   return (
-    <div className='mx-auto max-w-screen-lg px-3'>
-      <BreadcrumbMain />
-      {children}
-    </div>
+    <>
+      <Head>
+        <link
+          rel='canonical'
+          href='https://www.anthonyperez.xyz/blog'
+          key='canonical'
+        />
+      </Head>
+      <div className='mx-auto max-w-screen-lg px-3'>
+        <BreadcrumbMain />
+        {children}
+      </div>
+    </>
   )
 }
