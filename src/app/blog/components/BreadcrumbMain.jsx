@@ -21,7 +21,7 @@ export const BreadcrumbMain = () => {
         </BreadcrumbItem>
         <BreadcrumbItem key='implementaciondebotonyappy' isCurrent={currentPage === 'implementaciondebotonyappy'}>
           <Link href='/blog/implementacion-de-boton-yappy'>
-            Implementació del Botón de yappy
+            Implementación del Botón de yappy
           </Link>
         </BreadcrumbItem>
       </Breadcrumbs>
