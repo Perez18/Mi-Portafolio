@@ -4,7 +4,7 @@ import CopyClipboard from '../../components/copyClipBoard'
 const page = () => {
   return (
     <div>
-      <h1 className='text-3xl text-center font-bold uppercase'>Implementacion de boton de yappy</h1>
+      <h1 className='text-3xl text-center font-bold uppercase'>Implementación Del Botón De Yappy</h1>
       <p className=' text-gray-500  text-small'>Fecha: 03 de enero 2024</p>
       <div className='pt-5'>
         <h2 className='text-3xl font-bold'>Introduccion</h2>
