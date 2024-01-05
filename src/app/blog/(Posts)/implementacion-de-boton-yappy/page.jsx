@@ -1,4 +1,5 @@
 import React from 'react'
+import CopyClipboard from '../../components/copyClipBoard'
 
 const page = () => {
   return (
@@ -14,32 +15,23 @@ const page = () => {
         </p>
 
         <h2 className='text-3xl pt-5 font-bold'>Instalacion de SDK</h2>
-        <pre className='bg-slate-400/10 py-6'>
-          <code>
-            npm install yappy-node-sdk-X.X.X.tgz
-          </code>
-        </pre>
+        <br />
+        <CopyClipboard text='npm install yappy-node-sdk-X.X.X.tgz' />
         <p>o</p>
-        <pre className='bg-slate-400/10 py-6 truncate'>
-          <code>
-            npm install https://github.com/BancoGeneral/Boton-de-Pago-Yappy_Node.js/releases/download/X.X.X/yappy-node-back-sdk-X.X.X.tar
-          </code>
-        </pre>
-
+        <CopyClipboard text='npm install https://github.com/BancoGeneral/Boton-de-Pago-Yappy_Node.js/releases/download/X.X.X/yappy-node-back-sdk-X.X.X.tar' />
         <h2 className='text-3xl pt-5 font-bold'>Importar SDK</h2>
-        <pre className='language-bash bg-slate-400/10 py-6' tabindex='0'>
-          <code className='language-bash'>
-            import * as yappy from "yappy-node-sdk";
-          </code>
-        </pre>
-
+        <br />
+        <CopyClipboard text='import * as yappy from "yappy-node-sdk";' />
         <h2 className='text-3xl pt-5 font-bold'>Obtener url de pago</h2>
         <p>
-          En este punto, es crucial enviar nuestra información de pago al API para obtener un URL de pago. Este enlace nos dirigirá a la plataforma de Yappy.
+          En este punto, es crucial enviar nuestra información de pago al sistema de yappy(SDK) para obtener un URL de pago, este enlace nos dirigirá a la plataforma de Yappy.
         </p>
-        <pre className='language-bash bg-slate-400/10 py-6' tabindex='0'>
-          <code className='language-bash'>
-            {` const payment= {
+        <br />
+        <p>
+          Si deseas integrarla con tus diferentes plataforma de pagos, que es en nuestro caso procederemos a desarrollar una API que utilizara el método POST <strong className='text-cyan-400'>"api/pagosbgurl".</strong> Este metodo internamente gestionará el siguiente código:
+        </p>
+        <br />
+        <CopyClipboard text={` const payment= {
               total: 20.17,
               subtotal: 20.00,
               shipping: 0.00,
@@ -56,8 +48,41 @@ const page = () => {
           const response = await yappyClient.getPaymentUrl(payment,true, true); //Para donaciones, en modo prueba
           const response = await yappyClient.getPaymentUrl(payment,false, true); //Pago normal, en modo prueba
           `}
-          </code>
-        </pre>
+        />
+        <h2 className='text-3xl pt-5 font-bold'>Procesamiento del Pago</h2>
+        <p>
+          Una vez que hemos obtenido la URL de pago de Yappy, es necesario implementar la lógica para procesar el pago cuando Yappy redirige de vuelta a nuestro sistema.
+          Para hacer esto, necesitamos configurar un endpoint que tenga el formato <strong className='text-cyan-400'> “/api/pagosbg”</strong>  en nuestra aplicación Node.js para manejar la respuesta de Yappy.
+        </p>
+        <br />
+        <CopyClipboard text={` 
+            app.get('/api/pagosbg', async (req, res) => {
+                try {
+                    // Procesar la respuesta de Yappy
+                    const success = yappyClient.validateHash(req.query); // success puede ser true o false
+
+                    //Respuesta de yappy
+                    const { orderId, status, confirmationNumber, hash } = req.query;
+
+                    // status:
+                    /* «E» para Ejecutado. El cliente confirmó el pago y se completó la compra.
+                    * – «R» para Rechazado. Cuando el cliente no confirma el pago dentro de los cinco minutos que dura la vida del pedido.
+                    * – «C» para Cancelado. El cliente inició el proceso, pero canceló el pedido en el app de Banco General.
+                    */
+
+                    // Realizar acciones necesarias con la respuesta de Yappy
+                    // Por ejemplo, actualizar el estado del pedido en la base de datos
+        
+                    // Enviar respuesta al sistema de Yappy indicando que hemos recibido la notificación correctamente
+                    res.json({ status: status, message: 'Notificación de pago recibida correctamente' });
+                } catch (error) {
+                    console.error('Error al procesar la notificación de Yappy:', error);
+                    res.status(500).json({ status: 'error', message: 'Error interno al procesar la notificación de pago' });
+                }
+            });
+                
+          `}
+        />
       </div>
     </div>
   )

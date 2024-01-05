@@ -25,7 +25,7 @@ export const Navigation = () => {
       <Navbar>
         <NavbarBrand>
           <ThemeSwitcher />
-          <p className='text-small lg:ml-3'>
+          <p className='text-small lg:ml-5'>
             <MapPinIcon />
             Panama
           </p>
