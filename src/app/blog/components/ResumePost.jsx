@@ -13,7 +13,7 @@ export const ResumePost = () => {
       </Link>
       <Link href='/blog/desarrollo-web-latinoamerica' class='max-w-sm p-6 border rounded-lg shadow hover:scale-105 transition duration-1000'>
         <h5 class='mb-2 text-2xl font-bold tracking-tight '>DESARROLLO WEB EN LATINOAMERICA</h5>
-        <p className='text-small pb-3 dark:text-gray-500'>Fecha: 25 de enero 2024</p>
+        <p className='text-small pb-3 dark:text-gray-500'>Fecha: 05 de abril 2024</p>
         <p class='mb-3 font-normal  dark:text-gray-400'>
           ¡Saludos, entusiastas del desarrollo web! En este rincón virtual, exploraremos el emocionante mundo del desarrollo web en latinoamerica, donde la tecnología
           se encuentra con la calidez tropical. Desde las últimas tendencias hasta las historias de éxitos

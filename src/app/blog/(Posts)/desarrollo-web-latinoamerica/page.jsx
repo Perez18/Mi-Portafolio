@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import startups from './startups.data'
 const Page = () => {
   return (
     <div>
@@ -28,40 +28,26 @@ const Page = () => {
         <h2 className='text-3xl pt-5 font-bold'>Staturp latinoamerica</h2>
         <p>Exploraremos algunas de las startups más destacadas de la región.</p>
         <ul>
-          <li>
-            <h3 className='text-3xl pt-5 font-bold'>1. Rappi</h3>
-            <br />
-            <Image src='/assets/rappi.webp' width={200} height={200} />
-            <p>
-              Rappi es una startup latinoamericana <span className=' font-bold bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> fundada en Colombia en 2015</span> que se ha convertido en una de las empresas de tecnología más prominentes de la región.
-              Su principal servicio es una plataforma de entrega a domicilio que ofrece una amplia gama de productos, incluyendo alimentos, supermercado, farmacia, y más recientemente, servicios financieros y de entretenimiento.
-            </p>
-            <br />
-            <p>
-              La empresa ha experimentado un rápido crecimiento gracias a su modelo de negocio innovador, que combina tecnología, logística eficiente y
-              una amplia red de repartidores, conocidos como "Rappitenderos". Rappi ha recibido múltiples rondas de financiamiento, lo que le ha permitido expandirse a varios países de América Latina, incluyendo México, Brasil, Argentina, Chile y Perú, entre otros.
-            </p>
-          </li>
-          <li>
-            <h3 className='text-3xl pt-5 font-bold'>2. Nubank </h3>
-            <br />
-            <Image src='/assets/nubank.webp' width={180} height={180} />
-            <p>
-              <span className=' font-bold bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> Fundada en 2013 en Brasil </span>, Nubank es una fintech que ofrece servicios financieros digitales,
-              incluyendo tarjetas de crédito, cuentas bancarias y préstamos, todo gestionado a través de una aplicación móvil. Es conocida por su enfoque en la transparencia y la experiencia del usuario.
-            </p>
-          </li>
-          <li>
-            <h3 className='text-3xl pt-5 font-bold'>3. Crehana  </h3>
-            <br />
-            <Image src='/assets/crehana.webp' width={250} height={250} />
-            <p>
-              es una plataforma educativa en línea que ofrece una amplia variedad de cursos y programas de formación en áreas como diseño, desarrollo web, marketing digital, fotografía,
-              negocios, entre otros.<span className=' font-bold bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'>  Fundada en Perú en 2015 </span>, Crehana se ha convertido en una opción popular para estudiantes y profesionales que buscan mejorar sus habilidades y conocimientos en diferentes campos a través de cursos interactivos y tutoriales en video. La plataforma brinda acceso a contenido de alta calidad creado por expertos
-              y facilita el aprendizaje a tu propio ritmo desde cualquier lugar con conexión a Internet.
-            </p>
-          </li>
+
+          {
+          startups.map(({ nombre, descripcion, srcimage, className }, index) => (
+            <li key={index}>
+              <h3 className='text-3xl pt-5 font-bold'>{index + 1}. {nombre}</h3>
+              <br />
+              <Image src={srcimage} width={200} height={200} className={className} />
+              {descripcion}
+            </li>
+          ))
+        }
         </ul>
+        <br />
+        <h2 className='text-3xl pt-5 font-bold'>
+          Resumen
+        </h2>
+        <p>
+          El desarrollo web en Latinoamérica ha evolucionado significativamente en los últimos años, mostrando un fuerte crecimiento,
+          una creciente oferta de servicios y capacitación, así como desafíos que están siendo abordados con iniciativas de colaboración y mejora continua.
+        </p>
       </div>
     </div>
   )
