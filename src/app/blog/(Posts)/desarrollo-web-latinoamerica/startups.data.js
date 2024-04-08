@@ -13,11 +13,11 @@ export default [
   },
   {
     nombre: 'Crehana',
-    descripcion: (<p>
+    descripcion: <p>
       Es una plataforma educativa en línea que ofrece una amplia variedad de cursos y programas de formación en áreas como diseño, desarrollo web, marketing digital, fotografía,
       negocios, entre otros.<span className=' font-bold bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'>  Fundada en Perú en 2015 </span>, Crehana se ha convertido en una opción popular para estudiantes y profesionales que buscan mejorar sus habilidades y conocimientos en diferentes campos a través de cursos interactivos y tutoriales en video. La plataforma brinda acceso a contenido de alta calidad creado por expertos
       y facilita el aprendizaje a tu propio ritmo desde cualquier lugar con conexión a Internet.
-    </p>),
+    </p>,
     srcimage: '/assets/crehana.webp',
     className: 'py-5'
   },
