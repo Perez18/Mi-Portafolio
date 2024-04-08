@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Blog - Implementacion del boton de yappy',
+  title: 'Implementacion del boton de yappy',
   description: 'El botón de Yappy es una herramienta comercial brindanda por banco general que permite realizar pagos en línea'
 }
 
