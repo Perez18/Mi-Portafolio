@@ -13,6 +13,11 @@ export const BreadcrumbMain = () => {
   return (
     <div className='flex flex-col flex-wrap gap-4 py-8'>
       <Breadcrumbs underline='active'>
+        <BreadcrumbItem key='inicio'>
+          <Link href='/' replace>
+            inicio
+          </Link>
+        </BreadcrumbItem>
         {
         pathNames.map((path, index) => (
           <BreadcrumbItem key={path}>
