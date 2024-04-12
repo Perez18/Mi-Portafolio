@@ -9,11 +9,11 @@ const page = () => {
       <div className='pt-5'>
         <h2 className='text-3xl font-bold'>Introduccion</h2>
         <p>
-          El botón de Yappy es una herramienta comercial de banco general que permite realizar pagos en línea.
+          El botón de Yappy es una app comercial que permite realizar pagos en línea.
           Esta plataforma puede ser integrada en nuestro sistema mediante los API que se detallan en su documentación.
           En este artículo, exploraremos la implementación utilizando la tecnologia de Node.js.
         </p>
-
+        <p>Bancos que lo ofrecen: <span className='font-bold'>Banco general y Credicorp bank </span> </p>
         <h2 className='text-3xl pt-5 font-bold'>Instalacion de SDK</h2>
         <br />
         <CopyClipboard text='npm install yappy-node-sdk-X.X.X.tgz' />
