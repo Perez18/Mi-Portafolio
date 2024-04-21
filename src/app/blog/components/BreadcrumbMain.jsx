@@ -14,7 +14,7 @@ export const BreadcrumbMain = () => {
     <div className='flex flex-col flex-wrap gap-4 py-8'>
       <Breadcrumbs underline='active'>
         <BreadcrumbItem key='inicio'>
-          <Link href='/' replace>
+          <Link href='/' rel='canonical' replace>
             inicio
           </Link>
         </BreadcrumbItem>

@@ -12,7 +12,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Portafolio - Anthony Perez',
-  description: 'Desarrollador web entusiasta con habilidades en todas las áreas tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo funcione sin problemas.'
+  description: 'Desarrollador web entusiasta y versatil tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo funcione sin problemas.',
+  openGraph: {
+    title: 'Portafolio web - Anthony Perez',
+    description: 'Desarrollador web entusiasta con habilidades en todas las áreas tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo funcione sin problemas.',
+    images: '/astronauta.png'
+  },
+  metadataBase: new URL('https://www.anthonyperez.xyz'),
+  alternates: {
+    canonical: './'
+  }
 }
 
 export default function RootLayout ({ children }) {
