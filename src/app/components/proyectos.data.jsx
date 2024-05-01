@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 // tipo 1: implementacion de servicios tipo 2: aplicaciones web o pagina web
-export default [
+const proyectos = [
   {
     nombre: 'Integración de facturacion Electronica',
     tipo: 1,
@@ -22,6 +22,7 @@ export default [
         <div>
           <p className='text-white/90 text-sm'>Integracion de boton de yappy</p>
         </div>
+        &nbsp;
         <Link
           href='blog/implementacion-de-boton-yappy'
           rel='noreferrer'
@@ -43,12 +44,10 @@ export default [
           <p className='text-white/90 text-sm'>Portal de pago</p>
           {/* <p className='text-black text-tiny'>Get notified.</p> */}
         </div>
-        <div className=' bg-purple-700 text-white  px-4 py-2 rounded-lg font-bold text-xs cursor-pointer'>
-          capturas
-        </div>
+
       </>
     ),
-    srcimage: '/proyectos/portalpago.jpeg',
+    srcimage: '/proyectos/portalpago_2.png',
     className: 'py-5'
   },
   {
@@ -58,9 +57,6 @@ export default [
       <>
         <div>
           <p className='text-white/90 text-sm'>Portal de cliente</p>
-        </div>
-        <div className=' bg-purple-700 text-white  px-4 py-2 rounded-lg font-bold text-xs cursor-pointer'>
-          capturas
         </div>
       </>
     ),
@@ -75,13 +71,57 @@ export default [
         <div>
           <p className='text-white/90 text-sm'>Administrador de prestamo</p>
         </div>
-        <div className=' bg-purple-700 text-white  px-4 py-2 rounded-lg font-bold text-xs cursor-pointer'>
-          capturas
-        </div>
       </>
     ),
     srcimage: '/proyectos/controlprestamo.png',
     className: 'py-5'
   }
-
 ]
+
+const imgPortalPagos = [
+  {
+    title: 'Portal de pagos',
+    src: '/proyectos/portalpago.png'
+  },
+  {
+    title: 'Portal de pagos',
+    src: '/proyectos/portalpago_2.png'
+  },
+  {
+    title: 'Portal de pagos',
+    src: '/proyectos/portalpago_3.png'
+  }
+]
+
+const imgPortalCliente = [
+  {
+    title: 'Portal de cliente',
+    src: '/proyectos/portalcliente.webp'
+  }
+]
+
+const imgPortalPrestamo = [
+  {
+    title: 'Portal de control de prestamo',
+    src: '/proyectos/controlprestamo.png'
+  },
+  {
+    title: 'Portal de control de prestamo',
+    src: '/proyectos/controlprestamo_2.png'
+  },
+  {
+    title: 'Portal de control de prestamo',
+    src: '/proyectos/controlprestamo_3.png'
+  },
+  {
+    title: 'Portal de control de prestamo',
+    src: '/proyectos/controlprestamo_4.png'
+  }
+]
+
+export {
+  proyectos as default,
+  imgPortalPagos,
+  imgPortalCliente,
+  imgPortalPrestamo
+}

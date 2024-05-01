@@ -1,7 +1,29 @@
+'use client'
+import { useState } from 'react'
 import { Card, CardHeader, CardFooter, Image } from '@nextui-org/react'
-import ProyectosData from './proyectos.data'
+import ProyectosData, { imgPortalPagos, imgPortalCliente, imgPortalPrestamo } from './proyectos.data'
+import Lightbox from 'yet-another-react-lightbox'
+import Captions from 'yet-another-react-lightbox/plugins/captions'
+import 'yet-another-react-lightbox/styles.css'
+import 'yet-another-react-lightbox/plugins/captions.css'
 
 export const Proyectos = () => {
+  const [open, setOpen] = useState(false)
+  const [proyecto, setProyecto] = useState()
+
+  const getImgProyectos = () => {
+    switch (proyecto) {
+      case 0:
+        return imgPortalPagos
+      case 1:
+        return imgPortalCliente
+      case 2:
+        return imgPortalPrestamo
+      default:
+        break
+    }
+  }
+
   return (
     <section id='proyectos'>
       <h2 className='text-4xl font-bold'>Proyectos</h2>
@@ -45,7 +67,6 @@ export const Proyectos = () => {
                 </Card>
 
               ))
-
           }
       </div>
       <br />
@@ -79,15 +100,34 @@ export const Proyectos = () => {
                     src={srcimage}
                     width={20}
                     height={20}
+                    onClick={() => {
+                      setOpen(true)
+                      setProyecto(index)
+                    }}
                   />
                   <CardFooter className='absolute bg-black/40 bottom-0 rounded-none justify-between'>
                     {descripcion}
+                    <div
+                      className=' bg-purple-700 text-white  px-4 py-2 rounded-lg font-bold text-xs cursor-pointer'
+                      onClick={() => {
+                        setOpen(true)
+                        setProyecto(index)
+                      }}
+                    >
+                      capturas
+                    </div>
                   </CardFooter>
                 </Card>
 
               ))
-
           }
+        <Lightbox
+          open={open}
+          plugins={[Captions]}
+          close={() => setOpen(false)}
+          styles={{ container: { backgroundColor: 'rgba(0, 0, 0, .7)' } }}
+          slides={getImgProyectos()}
+        />
       </div>
     </section>
   )
