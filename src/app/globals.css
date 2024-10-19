@@ -20,13 +20,12 @@
 body {
   padding: 0;
   margin: 0;
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
     
 }
 
+
+/* Estilos para el tema oscuro */
+.dark body {
+  background-color: #05091B ;
+  color: #ffffff;
+}

@@ -10,7 +10,7 @@ const page = () => {
         <h2 className='text-3xl font-bold'>Introduccion</h2>
         <p>
           El botón de Yappy es una app comercial que permite realizar pagos en línea.
-          Esta plataforma puede ser integrada en nuestro sistema mediante los API que se detallan en su documentación.
+          Esta plataforma puede ser integrada en nuestro sistema mediante los API que se detallan en su <a href='https://www.yappy.com.pa/comercial/desarrolladores/'> documentación</a>.
           En este artículo, exploraremos la implementación utilizando la tecnologia de Node.js.
         </p>
         <p>Bancos que lo ofrecen: <span className='font-bold'>Banco general y Credicorp bank </span> </p>
@@ -24,11 +24,14 @@ const page = () => {
         <CopyClipboard text='import * as yappy from "yappy-node-sdk";' />
         <h2 className='text-3xl pt-5 font-bold'>Obtener url de pago</h2>
         <p>
-          En este punto, es crucial enviar nuestra información de pago al sistema de yappy(SDK) para obtener un URL de pago, este enlace nos dirigirá a la plataforma de Yappy.
+          En este punto, es crucial enviar nuestra información de pago al sistema de yappy(SDK)
+          para obtener un URL de pago, este enlace nos dirigirá a la plataforma de Yappy.
         </p>
         <br />
         <p>
-          Si deseas integrarla con tus diferentes plataforma de pagos, que es en nuestro caso procederemos a desarrollar una API que utilizara el método POST <strong className='text-cyan-400'>"api/pagosbgurl".</strong> Este metodo internamente gestionará el siguiente código:
+          Si deseas integrarla con tus diferentes plataforma de pagos, que es en nuestro caso procederemos a desarrollar
+          una API que utilizara el método POST <strong className='text-cyan-400'>"api/pagosbgurl".</strong>
+          Este metodo internamente gestionará el siguiente código:
         </p>
         <br />
         <CopyClipboard text={` const payment= {
