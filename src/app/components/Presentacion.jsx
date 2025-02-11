@@ -1,18 +1,29 @@
 // import Image from 'next/image'
+'use client'
 import Astronauta from '../icons/Astronauta'
+import { ReactTyped } from 'react-typed'
 
 export const Presentacion = () => {
   return (
     <section className='flex flex-col items-center md:flex-row md:justify-between md:gap-x-24 py-20'>
       <div className='h-200'>
-        <h1 className='text-5xl font-bold'>Hola, Mi Nombre es
-          <span className='bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'> Anthony</span>
+        <h1 className='text-5xl font-bold'>
+          Hola, Mi Nombre es{' Anthony'}
         </h1>
-        <p className='mt-6 text-xl leading-9'>Desarrollador web
+        <br />
+        <h1 className='text-5xl font-bold bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent'>
+          <ReactTyped
+            strings={['Desarrollador Web', 'Creativo', 'Curioso tecnologico']}
+            typeSpeed={50}
+            backSpeed={30}
+            loop
+          />
+        </h1>
+        {/* <p className='mt-6 text-xl leading-9'>Desarrollador web
           <span className='text-cyan-400'> entusiasta y versatil </span>
           tanto en el diseño atractivo de las páginas como en la funcionalidad interna que hace que todo
           <span className='text-cyan-400'> funcione sin problemas.</span>
-        </p>
+        </p> */}
         <div className='mt-5 flex gap-1'>
           <a href='https://github.com/Perez18' rel='canonical' className='border border-cyan-50 py-2 px-3 rounded-lg transition duration-400 ease-in-out hover:scale-110'>
             <svg

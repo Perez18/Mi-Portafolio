@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 import Head from 'next/head'
 import { Navigation } from './components/Navigation'
-import { Inter } from 'next/font/google'
+import { Inter, Raleway } from 'next/font/google'
 import { Providers } from './providers'
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from './components/Footer'
 import GoogleAnalytics from './components/GoogleAnalytics'
 
-const inter = Inter({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Portafolio - Anthony Perez',
@@ -23,7 +23,7 @@ export const metadata = {
   }
 }
 
-export default function RootLayout ({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <Head>
@@ -37,11 +37,14 @@ export default function RootLayout ({ children }) {
           content='Portafolio web, Desarrollador web, fullstack,Desarrollo en Panama'
         />
       </Head>
-      <body className={inter.className}>
+      <body className={`${raleway.className} stars`}>
         {process.env.NODE_ENV === 'production' && (
           <GoogleAnalytics />
         )}
         <Providers>
+          <div id='stars' />
+          <div id='stars2' />
+          <div id='stars3' />
           <main>
             <Navigation />
             {children}
