@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import Head from 'next/head'
 import { Navigation } from './components/Navigation'
-import { Inter, Raleway } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import { Providers } from './providers'
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from './components/Footer'
@@ -23,7 +23,7 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout ({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <Head>
