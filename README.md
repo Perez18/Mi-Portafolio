@@ -2,6 +2,9 @@
 
 Este repositorio contiene el código fuente de mi portafolio personal, construido utilizando Next.js. El portafolio presenta una muestra de mi trabajo, proyectos destacados y detalles sobre mis habilidades y experiencia en desarrollo de software.
 
+
+![Descripción de la imagen](public/portafolio.png)
+
 ## Instalación
 
 Asegúrate de tener Node.js y npm instalados. Luego, sigue estos pasos:
